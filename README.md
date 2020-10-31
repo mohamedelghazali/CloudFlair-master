@@ -4,7 +4,6 @@ CloudFlair is a tool to find origin servers of websites protected by CloudFlare 
 
 The tool uses Internet-wide scan data from [Censys](https://censys.io) to find exposed IPv4 hosts presenting an SSL certificate associated with the target's domain name.
 
-For more detail about this common misconfiguration and how CloudFlair works, refer to the companion blog post at https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/.
 
 Here's what CloudFlair looks like in action.
 
@@ -63,7 +62,7 @@ $ export CENSYS_API_SECRET=...
 3) Clone the repository
 
 ```
-$ git clone https://github.com/christophetd/cloudflair.git
+$ gh repo clone mohamedelghazali/CloudFlair-master
 ```
 
 4) Install the dependencies
@@ -124,6 +123,4 @@ CENSYS_API_SECRET=your-secret
 $ docker run --rm --env-file=censys.env christophetd/cloudflair myvulnerable.site
 ```
 
-## Compatibility
 
-Tested on Python 2.7 and 3.5. Feel free to [open an issue](https://github.com/christophetd/cloudflair/issues/new) if you have bug reports or questions.
